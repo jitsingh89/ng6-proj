@@ -1,6 +1,12 @@
-<app-header></app-header>
-<div class="container">
-  <ng-content></ng-content>
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
+<div class="container"> 
+  <app-header></app-header>
+  <div class="row content">
+      <div class="col-sm-3 sidenav">
+        <h4>Jitendra's Angular</h4>      
+      </div>
+      <div class="col-sm-9">
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+  <app-footer></app-footer>
+</div> 

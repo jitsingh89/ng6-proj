@@ -3,16 +3,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path : 'posts',
-    loadChildren : './posts/posts.module#PostsModule'
-  },
-  {
     path : 'users',
     loadChildren : './users/users.module#UsersModule'
   },
   {
-    path : '',
-    redirectTo : '',
+    path : 'posts',
+    loadChildren : './posts/posts.module#PostsModule'
+  }, 
+  {
+    path : 'comments',
+    loadChildren : './comments/comments.module#CommentsModule'
+  },
+  {
+    path : 'todos',
+    loadChildren : './todos/todos.module#TodosModule'
+  },
+  {
+    path : '', 
+    loadChildren : './users/users.module#UsersModule',
     pathMatch : 'full'
   }
 ];
