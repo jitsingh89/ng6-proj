@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren : './posts/posts.module#PostsModule'
   }, 
   {
+    path : 'albums',
+    loadChildren : './albums/albums.module#AlbumsModule'
+  }, 
+  {
     path : 'comments',
     loadChildren : './comments/comments.module#CommentsModule'
   },

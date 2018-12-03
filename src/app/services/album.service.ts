@@ -4,13 +4,13 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class CommentService {
+export class AlbumService {
 
-  url="https://jsonplaceholder.typicode.com/comments";
+  url="https://jsonplaceholder.typicode.com/albums";
 
   constructor(private  _http: HttpClient) { }
 
-  getComments(){
+  getAlbums(){
    return this._http.get(this.url);
   }
 }
